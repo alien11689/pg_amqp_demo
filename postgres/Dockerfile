@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:16.10
 
 ADD pg_amqp /pg_amqp
 
