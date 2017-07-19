@@ -1,5 +1,8 @@
 #!/bin/sh
 
+wget -nc https://raw.githubusercontent.com/rabbitmq/rabbitmq-management/rabbitmq_v3_6_10/bin/rabbitmqadmin
+chmod +x rabbitmqadmin
+
 git submodule init
 git submodule update
 
