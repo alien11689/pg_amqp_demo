@@ -1,0 +1,11 @@
+rmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+        - "15672:15672"
+        - "5672:5672"
+postgres:
+    build: ./postgres
+    ports:
+        - "5432:5432"
+    links:
+        - rmq
